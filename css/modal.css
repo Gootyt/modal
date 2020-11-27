@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 240, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-animation-name: fadeIn;
+    /* Fade in the background */
+    -webkit-animation-duration: 1s;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    margin: 30px;
+    background-color: white;
+    margin: auto;
+    padding: 55px;
+    border: 3px solid #888;
+    width: 35%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 1s;
+    animation-name: slideIn;
+    animation-duration: 1s;
+}
+
+.closeModal {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cancButton {
+    color: white;
+    background-color: red;
+    width: 75px;
+    height: 40px;
+    margin: 0 20px;
+    float: right;
+}
+
+.okButton {
+    color: white;
+    background-color: green;
+    width: 75px;
+    height: 40px;
+    float: right;
+    margin-bottom: 30px;
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes slideIn {
+    from {
+        bottom: -600px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -600px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media screen and (max-width:560px) {
+    .modal {
+        width: 100%;
+    }
+}

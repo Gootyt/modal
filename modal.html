@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="openModalBtn" style="width:150px; height:40px;" onclick="openModal();">Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="closeModal" onclick="closeModal();">x</span>
+            <h2>CSSScript.com</h2>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel pulvinar nisi. Vestibulum at rhoncus tellus, eget consequat elit. Duis in tristique arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Vivamus nec vulputate dolor. Donec consequat lectus a lacus dictum semper. Pellentesque auctor neque nisl, eu porttitor lacus vulputate non. Curabitur in justo lacinia, sodales est id, imperdiet nulla. Donec quis elit in magna placerat
+                convallis eu quis nisi.
+            </p>
+
+
+
+            <input type="button" onclick="closeModal();" class="cancButton" value="Cancel ">
+            <input type="button" onclick="closeModal();" class="okButton" value="Okay ">
+
+        </div>
+
+    </div>
+
+
+    <script src="js/modal.js"></script>
+
+</body>
+
+</html>
